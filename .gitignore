@@ -1,0 +1,17 @@
+# --- Terraform Hassas Dosyalar ve Durumlar ---
+*.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# --- Çevre Değişkenleri ve Gizli Dosyalar ---
+.env
+
+# --- Python ve Sanal Ortam Dosyaları ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
