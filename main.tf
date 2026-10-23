@@ -49,7 +49,7 @@ resource "aws_instance" "web" {
     ami= data.aws_ami.amazon_linux.id
     instance_type = var.instance_type
     security_groups = [aws_security_group.ec2_sg.name]
-    tag={
+    tags={
         Name = var.tag_name
     }
     user_data=base64encode(templatefile("${path.module}/userdata.sh", {

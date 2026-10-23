@@ -5,6 +5,8 @@ services:
       - "80:80"
     networks:
       - webnet
+    env_file:
+      - .env
     depends_on:
       - database
     restart: always
