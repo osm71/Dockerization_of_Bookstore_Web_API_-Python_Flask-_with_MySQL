@@ -18,7 +18,7 @@ cd /home/ec2-user/app
 cat <<EOF > .env
 MYSQL_ROOT_PASSWORD=${root_password}
 MYSQL_DATABASE=bookstore_db
-MYSQL_USER=app_user
+MYSQL_USER= clarusway
 MYSQL_PASSWORD=${user_password}
 EOF
 
